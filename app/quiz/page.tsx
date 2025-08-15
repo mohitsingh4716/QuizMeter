@@ -38,7 +38,7 @@ export default function QuizPage() {
       try {
         const res = await fetch('https://opentdb.com/api.php?amount=15');
         const data = await res.json();
-        console.log("from quiz page", data.results);
+        // console.log("from quiz page", data.results);
         
         if (data.results && Array.isArray(data.results) && data.results.length > 0) {
           setQuestions(data.results);
@@ -126,7 +126,7 @@ export default function QuizPage() {
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-0 to-indigo-50">
-      {/* Header */}
+
       <div className="bg-white shadow-sm border-b">
         <div className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
           <div className="flex items-center space-x-4">
@@ -159,7 +159,7 @@ export default function QuizPage() {
             />
           </div>
 
-          {/* QuestionCard - Takes remaining space */}
+
           <div className="flex-1">
             {currentQuestion && (
               <>

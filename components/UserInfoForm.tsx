@@ -44,7 +44,7 @@ export const UserInfoForm = ({ userInfo, setUserInfo, error, loading, onStartQui
             type="text"
             value={userInfo.name}
             onChange={(e) => setUserInfo({ ...userInfo, name: e.target.value })}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none focus:border-indigo-500"
             placeholder="Enter your full name"
           />
         </div>
@@ -55,7 +55,7 @@ export const UserInfoForm = ({ userInfo, setUserInfo, error, loading, onStartQui
             type="email"
             value={userInfo.email}
             onChange={(e) => setUserInfo({ ...userInfo, email: e.target.value })}
-            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:border-transparent"
+            className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-indigo-500  focus:outline-none focus:border-indigo-500"
             placeholder="Enter your email"
           />
         </div>
@@ -65,7 +65,7 @@ export const UserInfoForm = ({ userInfo, setUserInfo, error, loading, onStartQui
         <button
           onClick={onStartQuiz}
           disabled={loading}
-          className="w-full bg-indigo-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
+          className="w-full bg-indigo-600 text-white py-3 px-4 rounded-lg font-medium hover:bg-indigo-700 focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 disabled:opacity-50 disabled:cursor-not-allowed "
         >
           {loading ? 'Loading Quiz...' : 'Start Quiz'}
         </button>
