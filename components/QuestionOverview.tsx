@@ -1,10 +1,8 @@
-interface UserAnswer {
-  questionIndex: number;
-  selectedAnswer: string;
-}
+import { Question, UserAnswer } from "@/lib/types";
+
 
 interface QuestionOverviewProps {
-  questions: any[];
+  questions: Question[];
   userAnswers: UserAnswer[];
   currentQuestionIndex: number;
   onNavigate: (index: number) => void;

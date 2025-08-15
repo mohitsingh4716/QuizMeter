@@ -1,14 +1,7 @@
+import { ResultCardProps } from '@/lib/types';
 import { decodeHTML } from '@/lib/utils';
 
-interface ResultCardProps {
-  result: {
-    question: string;
-    userAnswer: string;
-    correctAnswer: string;
-    isCorrect: boolean;
-  };
-  index: number;
-}
+
 
 export const ResultCard = ({ result, index }: ResultCardProps) => {
   return (

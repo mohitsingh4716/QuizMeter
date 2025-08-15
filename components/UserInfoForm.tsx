@@ -1,9 +1,10 @@
 
+import { UserInfo } from '@/lib/types';
 import Image from 'next/image';
 
 interface UserInfoFormProps {
-  userInfo: { name: string; email: string };
-  setUserInfo: (info: { name: string; email: string }) => void;
+  userInfo: UserInfo;
+  setUserInfo: (info: UserInfo) => void;
   error: string;
   loading: boolean;
   onStartQuiz: () => void;

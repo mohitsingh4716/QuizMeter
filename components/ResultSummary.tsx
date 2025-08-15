@@ -1,8 +1,9 @@
+import { UserInfo } from '@/lib/types';
 import { User, Mail, RotateCcw } from 'lucide-react';
 import Image from 'next/image';
 
 interface ResultSummaryProps {
-  userInfo: { name: string; email: string };
+  userInfo: UserInfo;
   correctCount: number;
   totalQuestions: number;
   percentage: number;

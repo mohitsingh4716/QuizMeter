@@ -1,13 +1,7 @@
+import { Question } from '@/lib/types';
 import { decodeHTML } from '@/lib/utils';
 
-interface Question {
-  type: string;
-  difficulty: string;
-  category: string;
-  question: string;
-  correct_answer: string;
-  incorrect_answers: string[];
-}
+
 
 interface QuestionCardProps {
   question: Question;

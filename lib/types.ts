@@ -21,3 +21,13 @@ export interface UserInfo {
   name: string;
   email: string;
 }
+
+export interface ResultCardProps {
+  result: {
+    question: string;
+    userAnswer: string;
+    correctAnswer: string;
+    isCorrect: boolean;
+  };
+  index: number;
+}
